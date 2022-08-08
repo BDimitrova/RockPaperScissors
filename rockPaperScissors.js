@@ -32,11 +32,11 @@ function rockPaperScissors(playerTurn) {
     console.log(`The computer chooses ${computerTurn}`);
 
     if ((playerTurn === rock && computerTurn === scissors) || (playerTurn === paper && computerTurn === rock) || (playerTurn === scissors && computerTurn === paper)) {
-        console.log("You win!");
+        console.log("\x1b[32mYou win!\x1b[0m");
     } else if ((playerTurn === scissors && computerTurn === rock) || (playerTurn === rock && computerTurn === paper) ||(playerTurn === paper && computerTurn === scissors)) {
-        console.log("You lose!");
+        console.log("\x1b[31mYou lose!\x1b[0m");
     } else {
-        console.log("This game was a draw!");
+        console.log("\x1b[33mThis game was a draw!\x1b[0m");
     }
 }
 rockPaperScissors("s")
